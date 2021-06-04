@@ -1,0 +1,14 @@
+public class LayerItem extends JLabel{
+    public LayerItem(){
+        this.addMouseMotionListener(new MouseAdapter(){
+            @Override
+            public void mouseDragged(MouseEvent evt){
+                lblMouseDragged(evt);
+            }
+        });
+    }
+
+    public void lblMouseDragged(MouseEvent evt){
+        System.out.println("Here");
+    }
+}
